@@ -1,0 +1,55 @@
+/*Estilos da pagina index.html*/
+.center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+   flex-flow: column-reverse;
+   justify-content: center; 
+   align-items: center;
+}
+
+.container-logo {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    font-size: 17px;
+    padding: 10px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover {
+    color: brown;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-250 {
+    width: 250px;
+   /*height: 250px;*/
+}
+
+.tm-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.p-25 {
+    padding: 25px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
