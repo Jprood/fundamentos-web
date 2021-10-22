@@ -53,3 +53,22 @@
 .mb-50 {
     margin-bottom: 50px;
 }
+
+/*Estilo da pagina contato.html*/
+
+.container-cont {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.bol {
+    font-weight: bold;
+}
+
+

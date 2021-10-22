@@ -19,29 +19,53 @@
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Formas de contato</h1>
 
-    <form>
-        <label for="nome">Nome</label> <br>
-        <input type="text" id="nome">
-        <br>
-        <label for="email">Email</label> <br>
-        <input type="email" id="email">
-        <br>
-        <label for="assunto">Assunto</label> <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <div class="container-cont">
+        <div class="ml-50">
+            <form>
+                <label for="nome">Nome</label> <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <br>
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+                <br>
+                <label for="assunto">Assunto</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </div>
+        <div class="ml-50">
+            <p class="bol">Avenida Paulista 1010</p>
+            <p class="bol">São Paulo, SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0986062140378!2d-46.65428258538377!3d-23.56490176760728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7eb5e2ac9%3A0x5d2126fe859f8120!2sAv.%20Paulista%2C%201010%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1634750123109!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+        </div>
+    </div>
+    <hr>
+    <footer>
 
-    <h2>Endereço</h2>
+        <div class="container-logo">
+            <a href="https://www.linkedin.com/in/joao-pedro-rocha/" target="blank">
+                <img class="tm-logo p-25" src="assets/img/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/Jprood" target="blank">
+                <img class="tm-logo p-25" src="assets/img/github.png" alt="github">
+            </a>
+            <a href="https://www.instagram.com/jp_rood/" target="blank">
+                <img class="tm-logo p-25" src="assets/img/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Jprood &copy;
+        </p>
+    </footer>
 
-    <p>Avenida Paulista 1010</p>
-    <p>São Paulo, SP</p>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0986062140378!2d-46.65428258538377!3d-23.56490176760728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7eb5e2ac9%3A0x5d2126fe859f8120!2sAv.%20Paulista%2C%201010%20-%20Jardim%20Paulistano%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1634750123109!5m2!1spt-BR!2sbr"
-        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
